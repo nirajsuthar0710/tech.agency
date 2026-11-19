@@ -2,7 +2,7 @@
 
 // DEMO CONTACT DETAILS
 // Replace these only when you have an approved business contact.
-const BUSINESS_EMAIL = "neerajsuthar661@gmail.com";
+const BUSINESS_EMAIL = "neerajsuthar661@gmail.com"; 
 const WHATSAPP_NUMBER = "9982207159";
 
 // Mobile navigation
