@@ -11,150 +11,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    /* PRICING SECTION */
-    .pricing-section {
-      background: #080b12;
-      padding: 100px 0;
-    }
-
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      margin-top: 45px;
-      align-items: stretch;
-    }
-
-    .pricing-card {
-      background: #101621;
-      border: 1px solid rgba(255,255,255,.1);
-      border-radius: 16px;
-      padding: 32px 26px;
-      display: flex;
-      flex-direction: column;
-      transition: .3s;
-      position: relative;
-    }
-
-    .pricing-card:hover {
-      transform: translateY(-7px);
-      border-color: #9b8cff;
-    }
-
-    .pricing-card.featured {
-      border: 1px solid #9b8cff;
-      background: linear-gradient(160deg,#211d3a,#101621 65%);
-    }
-
-    .popular-tag {
-      position: absolute;
-      top: -14px;
-      right: 20px;
-      background: #9b8cff;
-      color: #090a13;
-      padding: 5px 14px;
-      border-radius: 20px;
-      font-size: .7rem;
-      font-weight: 800;
-    }
-
-    .pricing-card h3 {
-      font: 700 1.5rem "Space Grotesk", sans-serif;
-      margin-bottom: 8px;
-    }
-
-    .pricing-card .plan-description {
-      color: #a0a9ba;
-      font-size: .85rem;
-      min-height: 48px;
-    }
-
-    .plan-price {
-      font: 700 2.6rem "Space Grotesk", sans-serif;
-      margin: 25px 0 5px;
-      color: #f4f6fb;
-    }
-
-    .plan-price small {
-      font-size: .85rem;
-      color: #a0a9ba;
-      font-weight: 400;
-    }
-
-    .plan-note {
-      color: #9b8cff;
-      font-size: .7rem;
-      margin-bottom: 22px;
-    }
-
-    .plan-divider {
-      border: 0;
-      border-top: 1px solid rgba(255,255,255,.1);
-      margin-bottom: 22px;
-    }
-
-    .plan-features {
-      list-style: none;
-      display: grid;
-      gap: 13px;
-      margin-bottom: 30px;
-      flex: 1;
-    }
-
-    .plan-features li {
-      color: #c1c7d3;
-      font-size: .87rem;
-    }
-
-    .plan-features li::before {
-      content: "✓";
-      color: #9b8cff;
-      font-weight: 800;
-      margin-right: 10px;
-    }
-
-    .plan-button {
-      display: block;
-      text-align: center;
-      padding: 13px;
-      border: 1px solid #9b8cff;
-      color: #f4f6fb;
-      border-radius: 8px;
-      font-weight: 700;
-      transition: .25s;
-    }
-
-    .plan-button:hover,
-    .featured .plan-button {
-      background: #9b8cff;
-      color: #090a13;
-    }
-
-    .pricing-disclaimer {
-      text-align: center;
-      margin-top: 28px;
-      font-size: .75rem;
-      color: #8993a5;
-    }
-
-    @media(max-width: 800px) {
-      .pricing-grid {
-        grid-template-columns: 1fr;
-        gap: 28px;
-      }
-    }
-  </style>
 </head>
 
 <body>
-
 <header class="header">
   <nav class="navbar container">
     <a href="#home" class="logo">TechStart<span>.</span></a>
     <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
-
     <div class="nav-links" id="navLinks">
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -163,29 +26,23 @@
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </div>
-
     <a href="#contact" class="nav-cta">Let's Talk ↗</a>
   </nav>
 </header>
 
 <main>
-
-  <!-- HERO -->
   <section class="hero section" id="home">
     <div class="container hero-grid">
       <div class="hero-content">
         <span class="eyebrow"><span class="status-dot"></span> DIGITAL SOLUTIONS AGENCY</span>
         <h1>We Build <span>Digital</span><br>Experiences.</h1>
         <p>We create modern websites and digital experiences that help businesses grow and stand out online.</p>
-
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary">Explore Projects ↗</a>
           <a href="#contact" class="btn btn-outline">Contact Us</a>
         </div>
-
         <div class="hero-note">Creative ideas. Clean design. Smart solutions.</div>
       </div>
-
       <div class="hero-visual">
         <div class="visual-glow"></div>
         <div class="visual-card">
@@ -203,20 +60,15 @@
     </div>
   </section>
 
-  <!-- STATS -->
   <section class="stats container">
     <div><strong>04+</strong><span>Demo Projects</span></div>
     <div><strong>100%</strong><span>Creative Focus</span></div>
     <div><strong>24/7</strong><span>Digital Presence</span></div>
   </section>
 
-  <!-- ABOUT -->
   <section class="section" id="about">
     <div class="container two-col">
-      <div>
-        <span class="eyebrow">WHO WE ARE</span>
-        <h2>Small team.<br><span>Big ideas.</span></h2>
-      </div>
+      <div><span class="eyebrow">WHO WE ARE</span><h2>Small team.<br><span>Big ideas.</span></h2></div>
       <div class="about-copy">
         <p>TechStart Agency is a creative web development concept focused on building clean, modern and user-friendly websites.</p>
         <p>Our goal is simple: turn ideas into useful digital experiences with thoughtful design and reliable functionality.</p>
@@ -225,174 +77,87 @@
     </div>
   </section>
 
-  <!-- SERVICES -->
   <section class="section section-dark" id="services">
     <div class="container">
       <div class="section-heading">
-        <div>
-          <span class="eyebrow">WHAT WE DO</span>
-          <h2>Our <span>Services</span></h2>
-        </div>
+        <div><span class="eyebrow">WHAT WE DO</span><h2>Our <span>Services</span></h2></div>
         <p>Digital services designed to give your ideas a strong online presence.</p>
       </div>
-
       <div class="service-grid">
-        <article class="service-card">
-          <div class="service-icon">⌘</div>
-          <h3>Website Development</h3>
-          <p>Modern, responsive websites designed for your business and audience.</p>
-          <span>01 / SERVICE</span>
-        </article>
-
-        <article class="service-card">
-          <div class="service-icon">✳</div>
-          <h3>UI / UX Design</h3>
-          <p>Simple, attractive and user-friendly layouts that make browsing easier.</p>
-          <span>02 / SERVICE</span>
-        </article>
-
-        <article class="service-card">
-          <div class="service-icon">↗</div>
-          <h3>Landing Pages</h3>
-          <p>Focused landing pages to present products, services and ideas clearly.</p>
-          <span>03 / SERVICE</span>
-        </article>
+        <article class="service-card"><div class="service-icon">⌘</div><h3>Website Development</h3><p>Modern, responsive websites designed for your business and audience.</p><span>01 / SERVICE</span></article>
+        <article class="service-card"><div class="service-icon">✳</div><h3>UI / UX Design</h3><p>Simple, attractive and user-friendly layouts that make browsing easier.</p><span>02 / SERVICE</span></article>
+        <article class="service-card"><div class="service-icon">↗</div><h3>Landing Pages</h3><p>Focused landing pages to present products, services and ideas clearly.</p><span>03 / SERVICE</span></article>
       </div>
     </div>
   </section>
 
-  <!-- PRICING SECTION -->
   <section class="pricing-section" id="pricing">
     <div class="container">
-
       <div class="section-heading">
-        <div>
-          <span class="eyebrow">SIMPLE PRICING</span>
-          <h2>Choose Your <span>Plan</span></h2>
-        </div>
+        <div><span class="eyebrow">SIMPLE PRICING</span><h2>Choose Your <span>Plan</span></h2></div>
         <p>Flexible demo packages for different website requirements.</p>
       </div>
-
       <div class="pricing-grid">
-
-        <!-- STARTER -->
         <article class="pricing-card">
           <h3>Starter</h3>
           <p class="plan-description">For personal websites and simple online presence.</p>
-
           <div class="plan-price">₹1,999</div>
           <div class="plan-note">Illustrative demo price</div>
-
           <hr class="plan-divider">
-
           <ul class="plan-features">
-            <li>1–3 Website Pages</li>
-            <li>Responsive Layout</li>
-            <li>Basic UI Design</li>
-            <li>Contact Section</li>
-            <li>Basic Website Setup</li>
+            <li>1–3 Website Pages</li><li>Responsive Layout</li><li>Basic UI Design</li><li>Contact Section</li><li>Basic Website Setup</li>
           </ul>
-
           <a href="#contact" class="plan-button">Choose Starter ↗</a>
         </article>
 
-        <!-- PROFESSIONAL -->
         <article class="pricing-card featured">
           <div class="popular-tag">POPULAR</div>
-
           <h3>Professional</h3>
           <p class="plan-description">For small businesses that need a stronger online presence.</p>
-
           <div class="plan-price">₹4,999</div>
           <div class="plan-note">Illustrative demo price</div>
-
           <hr class="plan-divider">
-
           <ul class="plan-features">
-            <li>Up to 5 Website Pages</li>
-            <li>Premium Responsive Design</li>
-            <li>Modern UI / UX</li>
-            <li>Contact Form Demo</li>
-            <li>Social Media Links</li>
-            <li>Basic SEO Setup</li>
+            <li>Up to 5 Website Pages</li><li>Premium Responsive Design</li><li>Modern UI / UX</li><li>Contact Form Demo</li><li>Social Media Links</li><li>Basic SEO Setup</li>
           </ul>
-
           <a href="#contact" class="plan-button">Choose Professional ↗</a>
         </article>
 
-        <!-- PREMIUM -->
         <article class="pricing-card">
           <h3>Premium</h3>
           <p class="plan-description">For projects that need more custom features and design.</p>
-
           <div class="plan-price">₹9,999</div>
           <div class="plan-note">Illustrative demo price</div>
-
           <hr class="plan-divider">
-
           <ul class="plan-features">
-            <li>Up to 8 Website Pages</li>
-            <li>Custom Design Concept</li>
-            <li>Advanced UI / UX</li>
-            <li>Interactive Elements</li>
-            <li>SEO-Friendly Structure</li>
-            <li>Priority Project Support</li>
+            <li>Up to 8 Website Pages</li><li>Custom Design Concept</li><li>Advanced UI / UX</li><li>Interactive Elements</li><li>SEO-Friendly Structure</li><li>Priority Project Support</li>
           </ul>
-
           <a href="#contact" class="plan-button">Choose Premium ↗</a>
         </article>
-
       </div>
-
-      <p class="pricing-disclaimer">
-        These are illustrative demo prices and package examples, not confirmed service offers.
-        Final scope and pricing would be agreed before any project begins.
-      </p>
-
+      <p class="pricing-disclaimer">These are illustrative demo prices and package examples, not confirmed service offers. Final scope and pricing would be agreed before any project begins.</p>
     </div>
   </section>
 
-  <!-- PROJECTS -->
   <section class="section" id="projects">
     <div class="container">
       <div class="section-heading">
-        <div>
-          <span class="eyebrow">SELECTED WORK</span>
-          <h2>Featured <span>Projects</span></h2>
-        </div>
+        <div><span class="eyebrow">SELECTED WORK</span><h2>Featured <span>Projects</span></h2></div>
         <p>A few website demos from our growing project collection.</p>
       </div>
-
       <div class="project-grid">
-        <a class="project-card" href="https://nirajsuthar0710.github.io/student-utility-hub/" target="_blank" rel="noopener noreferrer">
-          <div class="project-preview preview-one"><span>STUDENT</span><strong>Utility Hub.</strong><small>Study smarter.</small></div>
-          <div class="project-info"><div><h3>Student Utility Hub</h3><p>Tools for students</p></div><span class="project-arrow">↗</span></div>
-        </a>
-
-        <a class="project-card" href="https://nirajsuthar0710.github.io/my-portfolio/" target="_blank" rel="noopener noreferrer">
-          <div class="project-preview preview-two"><span>PERSONAL</span><strong>My Portfolio.</strong><small>Ideas. Skills. Work.</small></div>
-          <div class="project-info"><div><h3>Personal Portfolio</h3><p>Portfolio website</p></div><span class="project-arrow">↗</span></div>
-        </a>
-
-        <a class="project-card" href="https://nirajsuthar0710.github.io/royal-cafe/" target="_blank" rel="noopener noreferrer">
-          <div class="project-preview preview-three"><span>ROYAL</span><strong>Royal Cafe.</strong><small>A taste of elegance.</small></div>
-          <div class="project-info"><div><h3>Royal Cafe</h3><p>Cafe website</p></div><span class="project-arrow">↗</span></div>
-        </a>
-
-        <a class="project-card" href="https://nirajsuthar0710.github.io/shopease/" target="_blank" rel="noopener noreferrer">
-          <div class="project-preview preview-four"><span>SHOP</span><strong>ShopEase.</strong><small>Discover more.</small></div>
-          <div class="project-info"><div><h3>ShopEase</h3><p>Online store demo</p></div><span class="project-arrow">↗</span></div>
-        </a>
+        <a class="project-card" href="https://nirajsuthar0710.github.io/student-utility-hub/" target="_blank" rel="noopener noreferrer"><div class="project-preview preview-one"><span>STUDENT</span><strong>Utility Hub.</strong><small>Study smarter.</small></div><div class="project-info"><div><h3>Student Utility Hub</h3><p>Tools for students</p></div><span class="project-arrow">↗</span></div></a>
+        <a class="project-card" href="https://nirajsuthar0710.github.io/my-portfolio/" target="_blank" rel="noopener noreferrer"><div class="project-preview preview-two"><span>PERSONAL</span><strong>My Portfolio.</strong><small>Ideas. Skills. Work.</small></div><div class="project-info"><div><h3>Personal Portfolio</h3><p>Portfolio website</p></div><span class="project-arrow">↗</span></div></a>
+        <a class="project-card" href="https://nirajsuthar0710.github.io/royal-cafe/" target="_blank" rel="noopener noreferrer"><div class="project-preview preview-three"><span>ROYAL</span><strong>Royal Cafe.</strong><small>A taste of elegance.</small></div><div class="project-info"><div><h3>Royal Cafe</h3><p>Cafe website</p></div><span class="project-arrow">↗</span></div></a>
+        <a class="project-card" href="https://nirajsuthar0710.github.io/shopease/" target="_blank" rel="noopener noreferrer"><div class="project-preview preview-four"><span>SHOP</span><strong>ShopEase.</strong><small>Discover more.</small></div><div class="project-info"><div><h3>ShopEase</h3><p>Online store demo</p></div><span class="project-arrow">↗</span></div></a>
       </div>
     </div>
   </section>
 
-  <!-- PROCESS -->
   <section class="section section-dark" id="process">
     <div class="container">
       <span class="eyebrow">HOW WE WORK</span>
       <h2>Simple process.<br><span>Clear results.</span></h2>
-
       <div class="process-grid">
         <div><b>01</b><h3>Discover</h3><p>Understand the idea and project goals.</p></div>
         <div><b>02</b><h3>Design</h3><p>Plan a clean and engaging experience.</p></div>
@@ -402,19 +167,16 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section class="section contact-section" id="contact">
     <div class="container contact-grid">
       <div class="contact-copy">
         <span class="eyebrow">GET IN TOUCH</span>
         <h2>Have an idea?<br><span>Let's talk.</span></h2>
         <p>Tell us a little about your project. Choose WhatsApp or Email to contact us.</p>
-
         <div class="contact-methods">
-          <a href="mailto:YOUR_EMAIL@gmail.com" id="emailLink">
-            ✉ <span><small>EMAIL US</small>YOUR_EMAIL@gmail.com</span>
+          <a href="mailto:contact@example.com" id="emailLink">
+            ✉ <span><small>EMAIL US</small><span id="emailDisplay">contact@example.com</span></span>
           </a>
-
           <a href="#" id="whatsappLink" target="_blank" rel="noopener noreferrer">
             ◉ <span><small>WHATSAPP</small>Chat with us ↗</span>
           </a>
@@ -423,36 +185,26 @@
 
       <form class="contact-form" id="contactForm">
         <h3>Send a message</h3>
-
         <label for="name">Your Name</label>
         <input type="text" id="name" placeholder="Enter your name" required>
-
         <label for="email">Your Email</label>
         <input type="email" id="email" placeholder="Enter your email" required>
-
         <label for="message">Your Message</label>
         <textarea id="message" rows="5" placeholder="Tell us about your project..." required></textarea>
-
         <button type="submit" class="btn btn-primary form-btn">Continue on WhatsApp ↗</button>
         <p class="form-note" id="formNote">Demo contact form. No information is stored by this website.</p>
       </form>
     </div>
   </section>
 
-  <!-- FINAL CTA -->
   <section class="final-cta">
     <div class="container final-cta-inner">
-      <div>
-        <span class="eyebrow">READY TO START?</span>
-        <h2>Let's build your next<br><span>big idea.</span></h2>
-      </div>
+      <div><span class="eyebrow">READY TO START?</span><h2>Let's build your next<br><span>big idea.</span></h2></div>
       <a href="#contact" class="btn btn-light">Start a Project ↗</a>
     </div>
   </section>
-
 </main>
 
-<!-- FOOTER -->
 <footer class="footer">
   <div class="container footer-inner">
     <a href="#home" class="logo">TechStart<span>.</span></a>
